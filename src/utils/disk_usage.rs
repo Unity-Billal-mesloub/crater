@@ -12,7 +12,7 @@ impl DiskUsage {
             let stat = nix::sys::statvfs::statvfs(&path)?;
             let available = stat.blocks_available();
             let total = stat.blocks();
-            info!("{available} / {total} blocks used in {path:?}");
+            info!("{available} / {total} blocks available in {path:?}");
 
             Ok(Self {
                 usage: 1.0 - available as f32 / total as f32,
