@@ -98,6 +98,10 @@ impl Metrics {
         self.crater_completed_jobs_total
             .remove_label_values(&[experiment])?;
 
+        // Clear out all values from the progress report to avoid indefinitely retaining experiment
+        // metrics.
+        self.crater_progress_report.reset();
+
         Ok(())
     }
 
