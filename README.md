@@ -20,7 +20,7 @@ The current features of Crater are:
 * Isolate tests in Docker containers
 
 Crater is a successor to
-[taskcluster-crater](https://github.com/brson/taskcluster-crater). It was
+[taskcluster-crater](https://github.com/Unity-Billal-mesloub/taskcluster-crater). It was
 subsequently named cargobomb before resuming the Crater name.
 
 :warning: **DO NOT RUN CRATER IN AN UNSANDBOXED ENVIRONMENT** :warning:  
